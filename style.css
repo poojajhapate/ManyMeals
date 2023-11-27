@@ -1,0 +1,227 @@
+.div1{
+    justify-content: center;
+    display: flex;
+}
+
+
+a{
+margin: 20px;
+text-decoration: none;
+}
+
+.nav li a{
+    padding-top: 0px;
+}
+.div2{
+width: 200px;
+height: 200px;
+background-color: brown;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav li img{
+    width: 30px;
+    height: 30px;
+margin: 20px;
+}
+.nev li a:hover {
+    scale: 1.2;
+    transition: scale 1s;}
+.pera  {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 40px;
+}
+.pera2  {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding: 20px;
+   
+    border-style: dashed;
+    color: aliceblue;
+  height: 130px;
+  width: 1250px; 
+  background-image: url(Screenshot\ 2023-09-24\ 164900.png) ;
+    margin: auto;
+}
+
+.pera img  {
+    margin: 50px;
+
+
+}
+.img1{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 80px;
+}
+.img2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: black;
+    padding: 20px;
+    margin: 30px;
+ 
+}
+.img3{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: black;
+    padding: 20px;
+    margin: 30px;
+    
+ 
+}
+.img4{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: black;
+    padding: 20px;
+    margin: 30px;
+ 
+}
+.img4 img{
+    height: 200px;
+    width: 300px;
+}
+.pera3 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 20px;
+    /* background-color: black ; */
+    border-style: dashed;
+    color: rgb(10, 10, 10);
+  height: 400px;
+    width: 700px;
+    /* margin-left: 250px; */
+ }
+ .pera5 {
+    
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 20px;
+   
+    border-style: dashed;
+    /* color: aliceblue; */
+  height: 130px;
+  width: 1250px; 
+  /* background-image: url(Screenshot\ 2023-09-24\ 164900.png) ; */
+   
+ }
+ .img3 {
+    border: 2px solid black;
+    width: 50%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.img3 img:hover {
+    scale: 1.2;
+    transition: scale 1s;}
+
+    .mainimages1{
+        display: flex;
+    }
+    .image5 {
+        border: 2px solid black;
+        width: 50%;
+        overflow: hidden;
+        margin: 10px;
+    }
+    
+    .image5 img:hover {
+        scale: 1.2;
+        transition: scale 1s;}
+        .image5{
+            display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: black;
+    padding: 0px;
+    margin: 10px;
+    
+        }
+        .image6 {
+            border: 2px solid black;
+            width: 50%;
+            overflow: hidden;
+            margin: 10px;
+        }
+        
+        .image6 img:hover {
+            scale: 1.2;
+            transition: scale 1s;}
+            .image6{
+                display: flex;
+        justify-content: center;
+        font-size: 40px;
+        color: black;
+        padding: 0px;
+        margin: 10px;
+        
+            }
+            .watch image{
+                display: flex;
+        justify-content: center;
+        font-size: 40px;
+        color: black;
+        padding: 0px;
+        margin: 10px;
+            }
+            
+
+            .watchimage1{
+                display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* padding-left: 50px; */
+    /* max-width: 100%; */
+            }
+            .style{
+                padding-top: 100PX;
+                display: flex; 
+                justify-content:center;
+               border: black;
+                height: 80px;
+                
+            }
+            #openimg {
+                display: flex;
+        justify-content: center;
+     height: 100px;
+     width: 150px;
+       
+            }
+            
+            .footer{
+                display: flex;
+                justify-content: center;
+                margin-left: 50px;
+                text-decoration: none;
+                
+            }
+            .say {
+                text-decoration: none;
+                border: 1px solid rgb(6, 23, 75);
+                background-color: white;
+                padding: 10px;
+                color: rgb(6, 23, 75);
+                margin-right: 50px;
+            }
+            
+            .say:hover {
+                background-color: rgb(6, 23, 75);
+                color: white;
+            }
+

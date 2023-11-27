@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    input[type="text"], input[type="password"]{
+        padding: 10px; width: 300px; font-size: 15px; border: 1px solid #ccc;
+                border-radius: 5px;
+
+    }
+    .div1{
+       background-image: url(https://images.squarespace-cdn.com/content/v1/63d28fdf9b0def72a1e541fc/e2da5345-400b-488e-bfca-0e5c5fd40001/jose-tebar-NmyO_WHuMh0-unsplash.jpg?format=1500w);
+       background-size: cover;
+       height: 920px;
+         border: 1px solid #ccc;
+                border-radius: 5px;
+                color: aliceblue;
+
+        }
+       
+        .Account{
+            font-size: 30px; font-style: initial; padding-top: 20px;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+           padding-top: 10px;
+            font-size: 30px;
+
+            
+    }
+    #cap{
+        width: 70px; 
+        /* background-color: rgb(8, 8, 8);  */
+        color: #ccc;
+        height: 20px; 
+        border: 1px solid #ccc;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                margin: 3px;
+               
+    }
+    .sign:hover{
+        background-color: rgb(190, 134, 69);
+    color: white;
+    }
+    
+</style>
+</head>
+<body onload="show()">
+    <div class="div1">
+        <h1 class="content">Create Your Account</h1> <br><br><br>
+        <form style="margin-left:750px;">
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="nam" placeholder="Enter name" >
+           
+            <br><br>
+            <label for="phoneNumber">Mobile:</label><br>
+            <input type="text" id="num" placeholder="Enter Mobile"><br><br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" id="Usernam" placeholder="Enter Username"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="text" id="pass" placeholder="Enter password"><br><br>
+            <label for="password">Confirm Password:</label><br>
+            <input type="text" id="cpass" placeholder="Enter Confirm Possword"><br><br>
+            <!-- <div style="display: flex;"> -->
+                <div id="cap"></div>
+                
+                <input type="text" placeholder="Enter Captcha" style="height: 10px; width: 100px; margin: 3px;">
+                <button style="height: 30px;" onclick="refresh()">refresh</button><br><br>
+              
+              
+            <button onclick="run()" class="sign" style="width: 350px; height: 30px; ">Sign Up</button><br><br>
+            <p>Already have an account? <a href="./Singin.html">Sign in ▸</a> </p>
+        </form>
+    </div>
+    <script>
+      function run(){
+    let nam = document.getElementById('nam').value;
+    let num = document.getElementById('num').value;
+    let num1 = document.getElementById('num').value;
+    let Usernam = document.getElementById('usernam').value;
+    let pass = document.getElementById('pass').value;
+    let cpass = document.getElementById('cpass').value;
+    console.log(nam,num,Usernam,pass,cpass);
+    console.log(typeof(num));
+    console.log(typeof(num1))
+    if(nam === ''){
+        alert("plese enter your name");
+        document.getElementById('').focus();
+        return false
+    }
+    else if(isNaN(num)){
+        alert("plz enter v num");
+        document.getElementById('num').focus();
+        return false;
+    }
+    else if(num1.length !== 10){
+        alert('num should be 10 digit')
+        return false
+    }
+    else if (num1.length !==10 ){
+        alert('number should be 10 digit'); document.getElementById('num').focus(); return false;
+        } 
+        else if(usernam.includes ('@gmail.com'))
+        { alert("please include @gmail.com"); document.getElementById('usernam').focus(); return false;
+        } 
+        else if(pass===''){
+        document.getElementById('pass').focus(); return false;}
+
+        else if(!pass.includes('@'))
+        { alert('please include uper case'); document.getElementById('pass').focus(); return false;}
+        
+         
+}
+function t(){
+    let user = 'user@gmail.com';
+    let password = '123';
+    let userinput = document.getElementById('user').value;
+    let pass = document.getElementById('pass').value;
+    console.log(userinput,pass);
+    if(user === userinput && password === pass){
+        window.location.href="https://www.wired.com/story/everything-apple-announced-march-2022-iphone-se-mac-studio/"
+    }
+    else if (pass === ''){
+        alert('pleaese enter password')
+        document.getElementById('pass').focus();
+    }
+    else{
+        
+        document.getElementById('loginerror').innerHTML="user not exist";
+        document.getElementById('user').value="";
+        document.getElementById('pass').value="";
+        document.getElementById('user').focus();
+    }
+
+}
+function calgst(){
+    let howmany = document.getElementById('howmany').value;
+    let productprice = document.getElementById('productprice').value
+    let totalprice = howmany*productprice;
+    let sgst = (totalprice*(12/100));
+    let cgst = (totalprice*(6/100));
+    console.log(howmany,productprice);
+    document.getElementById('sgst').innerHTML = sgst;
+    document.getElementById('cgst').innerHTML = cgst;
+    document.getElementById('tgst').innerHTML = sgst+cgst;
+   return false;
+
+}
+
+// capture start
+function show(){
+    document.getElementById('cap').innerHTML = "dwggwu";
+    let character =
+    'qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM1234567890';
+    let com = '';
+    for (let i=0;i<6;i++){
+    let store = character.charAt(Math.floor(Math.random()*character.length)); com = com+store;
+    }
+    document.getElementById('cap').innerHTML = com;
+    
+    }
+    function refresh(){
+        show();
+    }
+    // capture end
+    // end sing up form
+    
+    </script>
+    
+    
+
+</body>
+</html>

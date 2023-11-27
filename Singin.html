@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sing in </title>
+    <style>
+    input[type="text"], input[type="password"]{
+        padding: 10px; width: 300px; font-size: 15px; border: 1px solid #ccc;
+                border-radius: 5px;
+
+    }
+    .div1{
+     
+       background-image: url(./ldp_img-9.png);
+       background-size:cover;
+        height: 500px; 
+         width: 400px;
+         margin-top: 60px;
+         margin-left: 35%;
+         border: 1px solid #ccc;
+                border-radius: 5px;
+
+        }
+        .Account{
+            font-size: 30px; font-style: initial; padding-top: 20px;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+           padding-top: 20px;
+            font-size: 30px;
+
+            
+    }
+    #cap{
+        width: 70px; background-color: white; height: 20px; 
+        border: 1px solid #ccc;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                margin: 3px;
+               
+    }
+    
+</style>
+</head>
+<body onload="show()">
+    <div class="div1">
+        <h1 class="content">Create Your Account</h1>
+        <form style="margin-left: 60px;">
+            <label for="name">Usernam or Number</label>
+            <br>
+            <input type="text" id="nam" placeholder="Enter Username" >
+           
+            <br><br>
+           
+            
+            <label for="password">Password:</label><br>
+            <input type="text" id="pass" placeholder="Enter password"><br><br>
+            
+            <!-- <div style="display: flex;"> -->
+                
+            <button onclick="run()">sign in</button><br>
+            <p><a href="#">Forgate Password</a> </p><br><br>
+            <p>Already have an account? <a href="Signup.html">Sign up ▸</a> </p>
+
+        </form>
+    </div>
+    <script src="./java2.js"></script>
+    
+    
+
+</body>
+</html>
